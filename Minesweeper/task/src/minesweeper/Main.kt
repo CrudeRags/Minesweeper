@@ -7,6 +7,7 @@ const val mine = "X"
 const val setMine = "*"
 const val setEmpty = "/"
 
+lateinit var minePositions: Set<CoOrdinates>
 
 data class CoOrdinates(val row: Int, val col: Int) {
     override fun toString(): String {
@@ -16,10 +17,9 @@ data class CoOrdinates(val row: Int, val col: Int) {
 
 fun main() {
     val (gameField, firstC) = createMineField()
-    val minePositions = getCoordinates(gameField)
+    minePositions = getCoordinates(gameField)
 
     gameField.reveal(firstC)
-    gameField.display()
 
     val viewField = gameField.map { it.copyOf() }.toTypedArray()
     viewField.mask()
@@ -71,6 +71,9 @@ fun Array<Array<String>>.reveal(co: CoOrdinates) {
                     try {
                         when (this[row + x][col + y]) {
                             mine -> check++
+                            setMine -> {
+                                if (CoOrdinates(row + x, col + y) in minePositions) check++
+                            }
                             empty -> mySet.add(CoOrdinates(row + x, col + y))
                         }
                     } catch(e: Exception) {}
@@ -118,7 +121,7 @@ fun Array<Array<String>>.play(mineCoOrdinates: Set<CoOrdinates>) {
     val inputCoOrdinates = mutableSetOf<CoOrdinates>()
     var display = false
 
-    while(inputCoOrdinates != mineCoOrdinates) {
+    while(inputCoOrdinates != mineCoOrdinates && mineCoOrdinates.size != this.countEmpty()) {
         var viewField = this.map { it.copyOf() }.toTypedArray()
         viewField.mask()
         if (display) {
@@ -134,6 +137,7 @@ fun Array<Array<String>>.play(mineCoOrdinates: Set<CoOrdinates>) {
 
         if (doWhat == "free") {
             if (this.getValue(inXY) == mine) {
+                this.explode()
                 this.display()
                 println("You stepped on a mine and failed!")
                 return
@@ -142,12 +146,11 @@ fun Array<Array<String>>.play(mineCoOrdinates: Set<CoOrdinates>) {
             display = true
         }
         else if (doWhat == "mine") {
-            when (this[inXY.row][inXY.col]) {
-                in (1..9).map { it.toString() } -> println("There is a number here!")
+            when (this.getValue(inXY)) {
+                in "123456789" -> println("There is a number here!")
                 setMine -> {
-                    val removeMine = CoOrdinates(row, col)
-                    inputCoOrdinates.remove(removeMine)
-                    this[removeMine.row][removeMine.col] = empty
+                    inputCoOrdinates.remove(inXY)
+                    this[inXY.row][inXY.col] = empty
                     display = true
                 }
                 else ->  {
@@ -159,6 +162,30 @@ fun Array<Array<String>>.play(mineCoOrdinates: Set<CoOrdinates>) {
         }
         else println("Unknown command. Command format: `3 2 free` or `3 2 mine`")
     }
+    this.mask()
     this.display()
-    if (inputCoOrdinates == mineCoOrdinates) println("Congratulations! You found all mines!")
+    if (inputCoOrdinates == mineCoOrdinates || mineCoOrdinates.size == this.countEmpty()) println("Congratulations! You found all mines!")
+}
+
+fun Array<Array<String>>.countEmpty(): Int {
+    var count = 0
+    val myCountArray = this.map { it.copyOf() }.toTypedArray()
+    myCountArray.mask()
+    myCountArray.indices.forEach {
+        myCountArray[it].indices.forEach { s ->
+            if (myCountArray[it][s] in listOf(setMine, empty)) count++
+        }
+    }
+    return count
+}
+
+fun Array<Array<String>>.explode() {
+    this.indices.forEach { row ->
+        this[row].indices.forEach { col ->
+            if (this[row][col] == setMine) {
+                if (CoOrdinates(row, col) in minePositions) this[row][col] = mine
+                else this[row][col] = empty
+            }
+        }
+    }
 }
