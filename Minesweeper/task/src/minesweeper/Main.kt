@@ -19,6 +19,7 @@ fun main() {
     val minePositions = getCoordinates(gameField)
 
     gameField.reveal(firstC)
+    gameField.display()
 
     val viewField = gameField.map { it.copyOf() }.toTypedArray()
     viewField.mask()
@@ -141,17 +142,17 @@ fun Array<Array<String>>.play(mineCoOrdinates: Set<CoOrdinates>) {
             display = true
         }
         else if (doWhat == "mine") {
-            when (this.getValue(inXY)) {
-                empty -> {
-                    inputCoOrdinates.add(inXY)
-                    this[inXY.row][inXY.col] = setMine
-                    display = true
-                }
+            when (this[inXY.row][inXY.col]) {
                 in (1..9).map { it.toString() } -> println("There is a number here!")
-                else -> {
+                setMine -> {
                     val removeMine = CoOrdinates(row, col)
                     inputCoOrdinates.remove(removeMine)
                     this[removeMine.row][removeMine.col] = empty
+                    display = true
+                }
+                else ->  {
+                    inputCoOrdinates.add(inXY)
+                    this[inXY.row][inXY.col] = setMine
                     display = true
                 }
             }
