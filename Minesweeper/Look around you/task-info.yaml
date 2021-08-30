@@ -156,13 +156,13 @@ files:
             val col = Random.nextInt(9)
             if (mineField[row][col] != 'X') {
                 mineField[row][col] = 'X'
-                mines--
+                --mines
             }
         }
 
         mineField.forEach { println(it.joinToString("")) }
     }
-  learner_created: false
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/8/stages/48/implement
-status: Unchecked
+status: Solved
 record: 3

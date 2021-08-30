@@ -2,34 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="593dd1ac-62e4-400e-af10-9b2e4a31f2f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Problems-Convert_a_date.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Problems-Convert_a_date_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Problems-Convert_a_date_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Fizz Buzz/Problems-Fizz_Buzz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Fizz Buzz/Problems-Fizz_Buzz_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Fizz Buzz/Problems-Fizz_Buzz_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/Problems-Initializing_an_array_of_longs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/Problems-Initializing_an_array_of_longs_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/Problems-Initializing_an_array_of_longs_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Is it here/Problems-Is_it_here.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Is it here/Problems-Is_it_here_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Is it here/Problems-Is_it_here_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Problems-The_lucky_ticket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Problems-The_lucky_ticket_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Problems-The_lucky_ticket_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sum of elements/Problems-The_sum_of_elements.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sum of elements/Problems-The_sum_of_elements_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sum of elements/Problems-The_sum_of_elements_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Minesweeper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper-task_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper-task_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper-task_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper-task_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Battle!/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Battle!/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Flexible mines/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Look around you/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/out/production/classes/minesweeper/CoOrdinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/out/production/classes/minesweeper/CoOrdinates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/out/production/classes/minesweeper/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/out/production/classes/minesweeper/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1bRN99k7Ps0jcBn4Oy7rtqUXdUp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.TaskKt">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="Minesweeper-task_main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -42,8 +109,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TaskKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Problems-Initializing_an_array_of_longs_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="TaskKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TaskKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -62,45 +143,70 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="353" key="GridCell.Tab.0.bottom" timestamp="1588597335203">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="365" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588654322130">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="365" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588654322130" />
+    <state x="1404" y="445" key="#xdebugger.evaluate" timestamp="1588659277775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1404" y="445" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1588659277775" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1588664481249">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588664481249" />
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom" timestamp="1589731257267">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="353" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588597335203" />
-    <state width="1493" height="353" key="GridCell.Tab.0.center" timestamp="1588597335203">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589731257267" />
+    <state width="1877" height="392" key="GridCell.Tab.0.center" timestamp="1589731257267">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="353" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588597335203" />
-    <state width="1493" height="353" key="GridCell.Tab.0.left" timestamp="1588597335203">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589731257267" />
+    <state width="1877" height="392" key="GridCell.Tab.0.left" timestamp="1589731257267">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="353" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588597335203" />
-    <state width="1493" height="353" key="GridCell.Tab.0.right" timestamp="1588597335203">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589731257267" />
+    <state width="1877" height="392" key="GridCell.Tab.0.right" timestamp="1589731257267">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="353" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588597335203" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1588597335195">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589731257267" />
+    <state width="1877" height="209" key="GridCell.Tab.1.bottom" timestamp="1588664805386">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588597335195" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1588597335195">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="209" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588664805386" />
+    <state width="1877" height="209" key="GridCell.Tab.1.center" timestamp="1588664805385">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1588597335195" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1588597335195">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="209" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588664805385" />
+    <state width="1877" height="209" key="GridCell.Tab.1.left" timestamp="1588664805385">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1588597335195" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1588597335195">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="209" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588664805385" />
+    <state width="1877" height="209" key="GridCell.Tab.1.right" timestamp="1588664805386">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588597335195" />
+    <state width="1877" height="209" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588664805386" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt</url>
-          <line>127</line>
+          <url>file://$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Minesweeper.kt</url>
+          <line>192</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Minesweeper.kt</url>
+          <line>163</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

@@ -580,7 +580,10 @@ files:
         this.display()
         println("Congratulations! You found all mines!")
     }
-  learner_created: false
+  learner_created: true
+- name: src/minesweeper/Minesweeper.kt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/8/stages/469/implement
-status: Unchecked
+status: Solved
 record: -1

@@ -93,12 +93,14 @@ files:
   text: |
     package minesweeper
 
-    import java.util.Arrays.copyOf
     import kotlin.random.Random
 
     fun main() {
         val minesweeperBaseArray = CharArray(9) { '.' }
         val minesweeperBaseField = Array(9) { minesweeperBaseArray.copyOf() }
+
+        println("")
+
         minesweeperBaseField.forEach {
             val random = Random.nextInt(9)
             it[random] = 'x'
@@ -109,7 +111,7 @@ files:
 
         minesweeperBaseField.forEach { println(it.joinToString("")) }
     }
-  learner_created: false
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/8/stages/47/implement
-status: Unchecked
+status: Solved
 record: 2

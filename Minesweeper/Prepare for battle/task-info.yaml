@@ -511,7 +511,11 @@ files:
     fun main() {
         val mineField = createMineField()
         mineField.reveal()
+        val gameField = mineField.map { it.copyOf() }.toTypedArray()
+        mask(gameField)
+
         mineField.forEach { println(it.joinToString("")) }
+        gameField.forEach { println(it.joinToString("")) }
     }
 
     fun createMineField(): Array<Array<String>> {
@@ -549,8 +553,15 @@ files:
         }
     }
 
+    fun mask(field: Array<Array<String>>): Array<Array<String>> {
+        field.forEach { row ->
+            row.mapIndexed {index, s -> if(s == mine) row[index] = empty }.toTypedArray()
+        }
+        return field
+    }
 
-  learner_created: false
+
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/8/stages/49/implement
-status: Unchecked
+status: Solved
 record: 4
